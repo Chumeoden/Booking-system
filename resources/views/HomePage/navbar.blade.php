@@ -4,10 +4,20 @@
                 <li class="link"><a href="/">Home</a></li>
                 <li class="link"><a href="#">Book</a></li>
                 @auth
-                    <li class="user-icon">
-                        <!-- Hiển thị biểu tượng người dùng chỉ khi đã đăng nhập -->
-                        <a href="javascript:void(0);"><i class="ri-account-pin-circle-fill"></i></a>
-                    </li>
+
+                
+
+@if (Auth::check())
+    <p>Xin chào, {{ Auth::user()->name }}!</p>
+    <form action="{{ route('logout') }}" method="post">
+        @csrf
+        <input type="submit" value="Đăng xuất">
+    </form>
+@else
+    <p>Bạn chưa đăng nhập!</p>
+    <!-- Thêm các phần tử khác ở đây nếu cần -->
+@endif
+
                 @else
                     <li class="link"><a href="/login">Login</a></li>
                     <li class="link"><a href="/register">Register</a></li>
