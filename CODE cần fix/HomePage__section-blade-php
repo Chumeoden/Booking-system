@@ -1,0 +1,72 @@
+
+
+<section class="section__container products__container">
+        <h2 class="section__header">Featured Products</h2>
+        <div class="products__grid">
+            @foreach($products as $product)
+                <div class="product__card">
+                <img src="{{ Storage::url($product->image) }}" alt="Product Image" />
+                    <div class="product__content">
+                        <div class="product__card__header">
+                            <h4>{{ $product->name }}</h4>
+                            <h4>${{ $product->price }}</h4>
+                        </div>
+                        <p>{{ $product->description }}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </section>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const productCards = document.querySelectorAll(".product__card");
+        const popup = document.createElement("div");
+        popup.classList.add("popup");
+
+        function openPopup(imageSrc) {
+        popup.innerHTML = `
+            <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <img src="${imageSrc}" alt="Product Image" />
+            </div>
+        `;
+        document.body.appendChild(popup);
+        }
+
+        function closePopup() {
+        popup.remove();
+        }
+
+        productCards.forEach((card) => {
+        const img = card.querySelector("img");
+        img.addEventListener("click", () => {
+            openPopup(img.src);
+        });
+        });
+    });
+    </script>
+
+        <section class="client">
+            <div class="section__container client__container">
+                <h2 class="section__header">What our client say</h2>
+                <div class="client__grid">
+                    <div class="client__card">
+                        <img src="assets/client-1.jpg" alt="client" />
+                        <p>
+                            The booking process was seamless, and the confirmation was
+                            instant. I highly recommend WDM&amp;Co for hassle-free hotel bookings.
+                        </p>
+                    </div>
+                    <!-- ... Các phần tử client cards khác ... -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section__container">
+            <div class="reward__container">
+                <p>100+ discount codes</p>
+                <h4>Join rewards and discover amazing discounts on your booking</h4>
+                <button class="reward__btn">Join Rewards</button>
+            </div>
+        </section>
+
