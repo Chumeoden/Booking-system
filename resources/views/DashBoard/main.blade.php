@@ -1,1 +1,2 @@
-<a href="">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a>
+@include('DashBoard.sidebarpro')
+@include('DashBoard.topbar')
