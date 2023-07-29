@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-    
->>>>>>> Stashed changes
 <style>
 /* Fonts Form Google Font ::- https://fonts.google.com/ -:: */
 @import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
@@ -97,18 +92,8 @@ body {
     background-color: #78DEC7;
 }
 
-<<<<<<< Updated upstream
 </style>
 <div class="register-form">
-=======
-    
-</style>    
-    
-    <div class="register-form">
->>>>>>> Stashed changes
-=======
-     <div class="register-form">
->>>>>>> parent of 98df3ab (update login register accountmanagement)
         <h2>Register</h2>
         <form method="POST" action="{{ route('register') }}">
             @csrf
@@ -138,4 +123,3 @@ body {
             </div>
         </form>
     </div>
-

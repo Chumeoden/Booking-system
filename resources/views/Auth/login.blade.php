@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,25 +10,7 @@
         /* Fonts Form Google Font ::- https://fonts.google.com/ -:: */
         @import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
         /* End Fonts */
-=======
->>>>>>> parent of 98df3ab (update login register accountmanagement)
 
-    <div class="login-form">
-        <h2>Login</h2>
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
-=======
-<!-- resources/views/auth/login.blade.php -->
-
->>>>>>> Stashed changes
-
-<style>
-    /* Paste CSS styles here */
-    /* Fonts Form Google Font ::- https://fonts.google.com/  -:: */
-    @import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur');
-    /* End Fonts */
-
-    /* Start Global rules */
     * {
         padding: 0;
         margin: 0;
@@ -44,16 +25,7 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
 
-<<<<<<< Updated upstream
-            <div class="form-group">
-                <button type="submit">Login</button>
-            </div>
-        </form>
-    </div>
-<<<<<<< HEAD
-</body>
-</html>
-=======
+
         font-family: 'Vibur', cursive;
         /*   the main font */
         font-family: 'Abel', sans-serif;
@@ -196,7 +168,3 @@
         </div>
     </form>
 </div>
->>>>>>> Stashed changes
-=======
-
->>>>>>> parent of 98df3ab (update login register accountmanagement)
