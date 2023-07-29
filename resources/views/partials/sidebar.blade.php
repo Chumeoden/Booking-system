@@ -4,7 +4,6 @@
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/') }}">
                 <div class="sidebar-brand-text mx-3">{{ __('Homepage') }}</div>
             </a>
-
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
@@ -13,10 +12,8 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>{{ __('Dashboard') }}</span></a>
             </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
-
             <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <span>{{ __('User Management') }}</span>
@@ -55,13 +52,10 @@
                     </div>
                 </div>
             </li>
-
                      <!-- Nav Item  -->
              <li class="nav-item {{ request()->is('admin/system_calendars') || request()->is('admin/system_calendars') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('admin.system_calendars.index') }}">
                     <i class="fas fa-fw fa-calendar"></i>
                     <span>{{ __('Calendar') }}</span></a>
             </li>
-
-
         </ul>
