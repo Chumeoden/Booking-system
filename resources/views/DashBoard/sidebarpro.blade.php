@@ -30,7 +30,7 @@
 
 <sidebar>
     <div class="brand">
-        <a href="#">α</a>
+        <a href="{{ route('dashboard') }}">α</a>
     </div>
 
     <nav>

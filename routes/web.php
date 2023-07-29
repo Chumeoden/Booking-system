@@ -7,7 +7,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashBoardController;
-
+use App\Http\Controllers\AccountController;
 
 
 Route::get('/', function () {
@@ -34,6 +34,9 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 // Trang người dùng
 Route::get('/dashboard', [DashBoardController::class, 'index'])->name('dashboard');
 
-Route::get('/viewsaccount', [DashBoardController::class, 'index'])->name('Account.viewsaccount');
+
+
+
+Route::get('/account/views', [AccountController::class, 'viewsAccount'])->name('Account.viewsaccount');
 
 
