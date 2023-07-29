@@ -7,11 +7,15 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashBoardController;
+<<<<<<< HEAD
 use App\Http\Controllers\AccountController;
 <<<<<<< Updated upstream
 =======
 
 >>>>>>> Stashed changes
+=======
+
+>>>>>>> parent of 98df3ab (update login register accountmanagement)
 
 
 Route::get('/', function () {
@@ -38,6 +42,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 // Trang người dùng
 Route::get('/dashboard', [DashBoardController::class, 'index'])->name('dashboard');
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
 
@@ -45,5 +50,8 @@ Route::get('/dashboard', [DashBoardController::class, 'index'])->name('dashboard
 =======
 >>>>>>> Stashed changes
 Route::get('/account/views', [AccountController::class, 'viewsAccount'])->name('Account.viewsaccount');
+=======
+Route::get('/viewsaccount', [DashBoardController::class, 'index'])->name('Account.viewsaccount');
+>>>>>>> parent of 98df3ab (update login register accountmanagement)
 
 

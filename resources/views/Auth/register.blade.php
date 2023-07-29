@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     
@@ -105,6 +106,9 @@ body {
     
     <div class="register-form">
 >>>>>>> Stashed changes
+=======
+     <div class="register-form">
+>>>>>>> parent of 98df3ab (update login register accountmanagement)
         <h2>Register</h2>
         <form method="POST" action="{{ route('register') }}">
             @csrf
