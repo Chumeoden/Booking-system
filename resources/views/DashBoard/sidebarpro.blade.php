@@ -40,7 +40,7 @@
         <div class="collapse in" id="myContent">
             <ul class="nav">
                 <li>
-                    <a href="{{ route('Account.viewsaccount') }}">
+                    <a href="#">
                         <svg class="lnr lnr-star"><use xlink:href="#lnr-star"></use></svg>
                         Views Account
                     </a>

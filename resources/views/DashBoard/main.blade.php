@@ -1,4 +1,8 @@
-@include('DashBoard.sidebarpro')
+
 @include('DashBoard.topbar')
 
+<<<<<<< Updated upstream
 
+=======
+@include('DashBoard.sidebarpro')
+>>>>>>> Stashed changes
